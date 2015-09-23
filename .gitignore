@@ -30,3 +30,16 @@
 
 # Debug files
 *.dSYM/
+
+*.cydsn/codegentemp/
+*.cydsn/Generated_Source/
+*.cydsn/CortexM0/
+*.cydsn/Export/
+*.cydsn/*.rpt
+*.cylib/CortexM0/
+*.sarav
+*.cycdx
+*.cyfit
+*.svd
+*.cydsn/*.html
+Backup/
