@@ -32,7 +32,6 @@
     			
             case CYBLE_EVT_GATT_CONNECT_IND:
     			deviceConnected = TRUE;
-                secondsSince = 0;
                 connHandle = *(CYBLE_CONN_HANDLE_T *)eventParam;
                 BLEConnected();
     			break;
@@ -41,7 +40,6 @@
     			deviceConnected = FALSE;
     			toNotify = FALSE;
     			ackNotificationReq = TRUE;
-                secondsSince = 0;
                 msgResp[0] = '\0';
     			break;
                 

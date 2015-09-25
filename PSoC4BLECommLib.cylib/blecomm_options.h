@@ -50,13 +50,6 @@
     #endif
         
     #define BLECOMM_BUF_LEN        (200)
-    #define BLECOMM_PING_IN        (0XCC)
-    #define BLECOMM_PING_OUT       (0XDD)
-    #define BLECOMM_DATA           (0XEE)
-    #define BLECOMM_TIMEOUT_WARN   (0XFC)
-    #define BLECOMM_TIMEOUT        (0XFD)
-    #define BLECOMM_EOM_FIRST      (0XFE)
-    #define BLECOMM_EOM_SECOND     (0XFF)
 
 
 #endif /* blecomm_options_H */

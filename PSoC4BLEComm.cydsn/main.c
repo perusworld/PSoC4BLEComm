@@ -5,10 +5,7 @@ CY_ISR(MY_ISR) {
 }
 
 void OnMessage(char* data, unsigned long len) {
-//    SerialDataBegin();
-//    SerialSendString("got your message data");
-//    SerialSendBytes(data, len);
-//    SerialDataEnd();
+    BLESend("Got your message",strlen("Got your message"));
 }
 
 int main()
@@ -19,6 +16,7 @@ int main()
     Ping_ISR_StartEx(MY_ISR);
     
     CyBle_Start(BLEEventHandler);    
+    BLEInit(OnMessage);
 
     for(;;)
     {
