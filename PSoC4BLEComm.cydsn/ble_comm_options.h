@@ -59,8 +59,7 @@
                         BLEOnMessage(incoming, wrReqParam->handleValPair.value.len);
                     }
                 }
-                
-                
+
                 if(TX_CCCD_HANDLE == wrReqParam->handleValPair.attrHandle)
                 {
                     if(FALSE == (wrReqParam->handleValPair.value.val[TX_CCCD_INDEX] & (~CCCD_VALID_BIT_MASK)))

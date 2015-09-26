@@ -5,7 +5,10 @@ CY_ISR(MY_ISR) {
 }
 
 void OnMessage(char* data, unsigned long len) {
-    BLESend("Got your message",strlen("Got your message"));
+    char resp[200];
+    strcpy(resp,"Got your message ");
+    strcat(resp,data);
+    BLESend(resp,strlen(resp));
 }
 
 int main()
