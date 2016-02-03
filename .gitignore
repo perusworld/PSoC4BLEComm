@@ -43,3 +43,5 @@
 *.svd
 *.cydsn/*.html
 Backup/
+Archive/
+ComponentUpdateLog.txt
